@@ -4,6 +4,8 @@ import math
 import os             
 
 '''
+--- Appendix ---
+
 Numbers refering to the notes (%12):
 0 -> B
 1 -> C
@@ -997,10 +999,12 @@ class Create_Image:
         
         
 
-#TEST
+########## WRITE ###########
+
+#Score parameters: BPM, Time Signature (TS) numerator, TS denominator, key signature (number of 'sharps'). The last argument is always 'False'
 Score1 = Score(5, 4, 4, 0, False)
 
-
+#Note parameters: pitch (if note - the rest by 12 defines the pitch)/symbol (if pause), duration. The appendix show the relation between number and note/pause
 Score1.insert_note(22, 0.25)
 Score1.insert_note(52, 0.25)
 Score1.insert_note(27, 0.0625)
@@ -1065,9 +1069,6 @@ Score1.insert_note(27, 0.125)
 Score1.insert_note(22, 0.125)
 Score1.insert_note(27, 0.125)
 Score1.insert_note(27, 1)
-
-
-
 Score1.insert_note(34, 0.0625)
 Score1.insert_note(7, 0.0625)
 Score1.insert_note(18, 0.125)
@@ -1109,4 +1110,3 @@ image.sweep_score()
 cv2.imshow("lala", image.img_sheet)
 cv2.imwrite('score.jpg', image.img_sheet)
 cv2.waitKey()
-#Score1.insert_note(4, 2, 1)
