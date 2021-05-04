@@ -10,4 +10,5 @@ This is a messy and simple score writer I created for fun and to practice some c
 - Some connection bars may come out wrong.
 - I'm not an expert in music, so I did what I could with what I knew and learned by searching.
 - It is possible to create only one page.
+- The other two codes - vector_extractor and test_draw - are used to extract the sets of coordinates from a black and white image symbol and show how it would look like in the score, respectively.
 - Most certainly, there are infinitely better ways to do what I did, and some methods may be unnecessary and too badly writen.
